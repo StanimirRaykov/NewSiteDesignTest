@@ -7,7 +7,7 @@ export default function Navbar() {
         APEX
       </Link>
       <div className="flex items-center gap-10">
-        {(["Shop", "Categories", "About"] as const).map((item) => (
+        {(["Shop", "Categories"] as const).map((item) => (
           <Link
             key={item}
             href={item === "Shop" ? "/search" : "#"}
@@ -18,6 +18,9 @@ export default function Navbar() {
         ))}
         <Link href="#" className="tracking-[2.5px] uppercase text-[#D94F2B] font-['Inter_Tight',system-ui,sans-serif] font-semibold shrink-0 text-xs leading-4">
           Sale
+        </Link>
+        <Link href="#" className="tracking-[2.5px] uppercase text-[#E8E5DF] font-['Inter_Tight',system-ui,sans-serif] font-semibold shrink-0 text-xs leading-4 hover:text-white transition-colors">
+          About
         </Link>
       </div>
       <div className="flex items-center gap-6">

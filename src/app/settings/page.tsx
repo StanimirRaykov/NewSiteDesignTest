@@ -4,10 +4,10 @@ const navItems = [
   { label: "Account", active: true },
   { label: "Orders", active: false },
   { label: "Addresses", active: false },
-  { label: "Payment Methods", active: false },
+  { label: "Payment", active: false },
   { label: "Notifications", active: false },
   { label: "Privacy", active: false },
-  { label: "Help & Support", active: false },
+  { label: "Help", active: false },
 ];
 
 export default function SettingsPage() {

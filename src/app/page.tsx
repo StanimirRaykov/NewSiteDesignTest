@@ -47,19 +47,36 @@ export default function Home() {
         </div>
 
         {/* Right panel */}
-        <div className="w-[480px] shrink-0 flex items-center justify-center bg-[#222220]">
+        <div className="w-[540px] shrink-0 flex items-center justify-center bg-[#1E1E1C]">
+          {/* Outer large circle */}
           <div
-            className="flex items-center justify-center rounded-full border border-[#D94F2B22] shrink-0"
+            className="relative flex items-center justify-center rounded-full shrink-0"
             style={{
-              width: 320,
-              height: 320,
-              background: "linear-gradient(135deg, rgba(217,79,43,0.094) 0%, rgba(217,79,43,0.19) 100%)",
+              width: 480,
+              height: 480,
+              background: "radial-gradient(circle at 40% 40%, #3A1A0C 0%, #231008 60%, #1A0C06 100%)",
             }}
           >
-            <svg width="100" height="100" viewBox="0 0 100 100" fill="none" style={{ flexShrink: 0 }}>
-              <circle cx="50" cy="50" r="45" stroke="#D94F2B" opacity="0.4" />
-              <path d="M30 50 Q50 20 70 50 Q50 80 30 50Z" fill="#D94F2B" opacity="0.6" />
-            </svg>
+            {/* Mid concentric ring */}
+            <div
+              className="absolute rounded-full border border-[#D94F2B20]"
+              style={{ width: 340, height: 340 }}
+            />
+            {/* Inner concentric ring */}
+            <div
+              className="absolute rounded-full border border-[#D94F2B30]"
+              style={{ width: 200, height: 200 }}
+            />
+            {/* Center eye/lens shape */}
+            <div
+              className="relative flex items-center justify-center rounded-full"
+              style={{ width: 110, height: 110, background: "rgba(217,79,43,0.10)" }}
+            >
+              <svg width="56" height="28" viewBox="0 0 56 28" fill="none" style={{ flexShrink: 0 }}>
+                <path d="M0 14 Q28 -2 56 14 Q28 30 0 14Z" fill="#D94F2B" opacity="0.65" />
+                <circle cx="28" cy="14" r="5" fill="#D94F2B" opacity="0.85" />
+              </svg>
+            </div>
           </div>
         </div>
       </section>

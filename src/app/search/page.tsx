@@ -3,9 +3,9 @@ import Navbar from "@/components/Navbar";
 const chips = ["All", "Running Shoes", "Training Gear", "Jackets", "Shorts", "Socks", "Accessories", "Sale"];
 
 const featuredCategories = [
-  { name: "Running", count: "142 items", bg: "#1A1A18", accent: "#D94F2B" },
-  { name: "Training", count: "98 items", bg: "#D94F2B", accent: "#1A1A18" },
-  { name: "Outdoor", count: "76 items", bg: "#2B4A3A", accent: "#6FCF97" },
+  { name: "Running", count: "142 ITEMS", bg: "#1A1A18", accent: "#D94F2B" },
+  { name: "Training", count: "98 ITEMS", bg: "#D94F2B", accent: "#1A1A18" },
+  { name: "Outdoor", count: "76 ITEMS", bg: "#1E1E1C", accent: "#D94F2B" },
 ];
 
 const trendingSearches = ["Air Max 2025", "Trail Running", "Compression Tights", "Waterproof Jacket"];
@@ -80,7 +80,7 @@ export default function SearchPage() {
           >
             <div
               className="absolute top-5 right-5 tracking-[3px] uppercase font-bold text-[10px] leading-3"
-              style={{ color: cat.accent, opacity: cat.name === "Training" ? 0.6 : 1 }}
+              style={{ color: cat.accent }}
             >
               {cat.count}
             </div>
@@ -92,7 +92,7 @@ export default function SearchPage() {
             <div className="flex items-center gap-2">
               <div
                 className="tracking-[1px] shrink-0 text-[11px] leading-[14px]"
-                style={{ color: cat.name === "Training" ? "#FFD4C8" : "#6B6960" }}
+                style={{ color: cat.name === "Training" ? "rgba(26,26,24,0.7)" : "#6B6960" }}
               >
                 Explore
               </div>
@@ -102,7 +102,7 @@ export default function SearchPage() {
                 viewBox="0 0 24 24"
                 fill="none"
                 strokeWidth="2"
-                style={{ flexShrink: 0, stroke: cat.name === "Training" ? "#FFD4C8" : "#6B6960" }}
+                style={{ flexShrink: 0, stroke: cat.name === "Training" ? "rgba(26,26,24,0.7)" : "#6B6960" }}
               >
                 <line x1="5" y1="12" x2="19" y2="12" />
                 <polyline points="12 5 19 12 12 19" />
